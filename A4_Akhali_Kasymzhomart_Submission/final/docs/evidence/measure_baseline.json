@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "file": "src/App.tsx",
+      "lines": 242
+    },
+    {
+      "file": "src/lib/canBook.ts",
+      "lines": 56
+    },
+    {
+      "file": "src/main.tsx",
+      "lines": 10
+    }
+  ],
+  "rules": [
+    {
+      "id": "D1",
+      "name": "day limit 1440 written as a literal",
+      "count": 7,
+      "extraCopies": 6,
+      "at": [
+        "src/App.tsx:11",
+        "src/App.tsx:142",
+        "src/App.tsx:149",
+        "src/App.tsx:163",
+        "src/App.tsx:170",
+        "src/lib/canBook.ts:7",
+        "src/lib/canBook.ts:34"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "booking limit 120 written as a literal (rule data excluded)",
+      "count": 2,
+      "extraCopies": 1,
+      "at": [
+        "src/lib/canBook.ts:8",
+        "src/lib/canBook.ts:45"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "whole-number check for time input, Number.isInteger (lines)",
+      "count": 3,
+      "extraCopies": 2,
+      "at": [
+        "src/App.tsx:26",
+        "src/App.tsx:27",
+        "src/lib/canBook.ts:21"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "time-field hint text \"Hint:\" written out",
+      "count": 2,
+      "extraCopies": 1,
+      "at": [
+        "src/App.tsx:149",
+        "src/App.tsx:170"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "places that hide the old result (setResult(null) / reducer \"...state, checked: false\")",
+      "count": 4,
+      "extraCopies": 3,
+      "at": [
+        "src/App.tsx:41",
+        "src/App.tsx:89",
+        "src/App.tsx:144",
+        "src/App.tsx:165"
+      ]
+    },
+    {
+      "id": "D6",
+      "name": "result.ok ok/error branches",
+      "count": 7,
+      "extraCopies": 6,
+      "at": [
+        "src/App.tsx:46",
+        "src/App.tsx:199",
+        "src/App.tsx:207",
+        "src/App.tsx:210",
+        "src/App.tsx:215",
+        "src/App.tsx:222",
+        "src/App.tsx:225"
+      ]
+    }
+  ],
+  "totalLines": 308,
+  "largest": {
+    "file": "src/App.tsx",
+    "lines": 242
+  },
+  "testFiles": 0,
+  "totalExtraCopies": 19
+}

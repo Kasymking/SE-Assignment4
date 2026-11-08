@@ -1,0 +1,20 @@
+$ npm run typecheck
+
+> vite-react-typescript-starter@0.0.0 typecheck
+> tsc --noEmit -p tsconfig.app.json
+
+exit code: 0
+
+$ npm run lint
+
+> vite-react-typescript-starter@0.0.0 lint
+> eslint .
+
+exit code: 0
+
+$ npm run build
+✓ 1582 modules transformed.
+dist/index.html                   0.71 kB │ gzip:  0.39 kB
+dist/assets/index-C5o0XrZj.css   11.61 kB │ gzip:  3.00 kB
+dist/assets/index-Bhg2fzSn.js   156.76 kB │ gzip: 50.56 kB
+✓ built in 2.80s

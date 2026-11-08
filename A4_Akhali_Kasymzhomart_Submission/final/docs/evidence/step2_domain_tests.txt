@@ -1,0 +1,16 @@
+$ npm test   (after step 2: domain layer extracted)
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/a4/repo
+
+ ✓ src/App.test.tsx (9 tests) 715ms
+ ✓ src/domain/rules.test.ts (21 tests) 4ms
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  11:38:32
+   Duration  2.79s (transform 182ms, setup 320ms, collect 226ms, tests 720ms, environment 879ms, prepare 297ms)
+

@@ -1,0 +1,105 @@
+0d768a5 (HEAD -> main, tag: final) docs: final evidence (tests, build, mutation check, browser checks, measurements, screenshots)
+ docs/evidence/browser_checks.txt                 |  15 +++
+ docs/evidence/final_tests.txt                    |  19 +++
+ docs/evidence/final_typecheck_lint_build.txt     |  20 +++
+ docs/evidence/jscpd.txt                          |   4 +
+ docs/evidence/measure_baseline.json              |  98 +++++++++++++++
+ docs/evidence/measure_final.json                 | 154 +++++++++++++++++++++++
+ docs/evidence/mutation_check.txt                 |   6 +
+ docs/screenshots/01_all_rooms.png                | Bin 0 -> 108664 bytes
+ docs/screenshots/02_capacity_30_exact.png        | Bin 0 -> 91667 bytes
+ docs/screenshots/03_capacity_31_insufficient.png | Bin 0 -> 86851 bytes
+ docs/screenshots/04_empty_state.png              | Bin 0 -> 55649 bytes
+ docs/screenshots/05_b204_available.png           | Bin 0 -> 117526 bytes
+ docs/screenshots/06_switch_a101_unavailable.png  | Bin 0 -> 121270 bytes
+ docs/screenshots/07_blocked_room.png             | Bin 0 -> 118694 bytes
+ docs/screenshots/08_mobile_360.png               | Bin 0 -> 108304 bytes
+ scripts/e2e-browser.mjs                          |  70 +++++++++++
+ 16 files changed, 386 insertions(+)
+7336b9e (tag: step5-cleanup) chore: remove unused @supabase/supabase-js, add measurement and mutation scripts, README
+ README.md                 |  60 ++++++++++++++++++++++
+ package-lock.json         | 128 +++-------------------------------------------
+ package.json              |   1 -
+ scripts/measure.mjs       |  52 +++++++++++++++++++
+ scripts/mutation-check.sh |  20 ++++++++
+ 5 files changed, 139 insertions(+), 122 deletions(-)
+ad8f130 (tag: step4b-feature-ui) feat(ui): filters, room list, room switching (F4, F5), per-room blocked status (F3); 63/63 tests pass
+ docs/evidence/step4b_feature_ui_tests.txt |  19 +++++
+ src/App.integration.test.tsx              | 134 ++++++++++++++++++++++++++++++
+ src/App.test.tsx                          |  20 +++--
+ src/App.tsx                               |  53 +++++++-----
+ src/components/BlockedBadge.tsx           |  10 +++
+ src/components/BlockedToggle.tsx          |  19 -----
+ src/components/BookingList.tsx            |   2 +-
+ src/components/EmptyState.tsx             |  17 ++++
+ src/components/EquipmentTags.tsx          |  16 ++++
+ src/components/ResultCard.tsx             |   3 +-
+ src/components/RoomFilters.tsx            |  58 +++++++++++++
+ src/components/RoomList.tsx               |  37 +++++++++
+ src/components/RoomPanel.tsx              |   2 +-
+ src/hooks/useAvailabilityForm.ts          |  27 +++---
+ src/hooks/useRoomSearch.ts                |  30 +++++++
+ 15 files changed, 381 insertions(+), 66 deletions(-)
+aa79dc0 (tag: step4a-catalog) feat(domain): room catalog (5 fictional rooms) and filterRooms (F1, F2); unit tests; UI unchanged, 53/53 pass
+ docs/evidence/step4a_catalog_filter_tests.txt | 18 ++++++++++
+ src/data/rooms.test.ts                        | 40 +++++++++++++++++++++
+ src/data/rooms.ts                             | 37 +++++++++++++++++++
+ src/domain/filter.test.ts                     | 52 +++++++++++++++++++++++++++
+ src/domain/filter.ts                          | 18 ++++++++++
+ src/domain/rules.ts                           |  2 +-
+ src/domain/types.ts                           | 20 ++++++++++-
+ 7 files changed, 185 insertions(+), 2 deletions(-)
+2bd85b0 (tag: step3-components) refactor: split App into components and a reducer hook; result derived instead of stored; 30/30 tests pass unchanged
+ docs/evidence/step3_components_tests.txt |  16 ++
+ src/App.tsx                              | 247 ++++---------------------------
+ src/components/AppHeader.tsx             |  19 +++
+ src/components/AvailabilityForm.tsx      |  48 ++++++
+ src/components/BlockedToggle.tsx         |  19 +++
+ src/components/BookingList.tsx           |  29 ++++
+ src/components/ResultCard.tsx            |  32 ++++
+ src/components/RoomPanel.tsx             |  33 +++++
+ src/components/TimeField.tsx             |  36 +++++
+ src/hooks/useAvailabilityForm.ts         |  50 +++++++
+ 10 files changed, 309 insertions(+), 220 deletions(-)
+37ae539 (tag: step2-domain) refactor: extract domain layer (constants, types, time helpers, rules); behavior unchanged, 30/30 tests pass
+ docs/evidence/step2_domain_tests.txt              | 16 ++++++++++
+ src/App.tsx                                       | 36 ++++++++++-------------
+ src/domain/constants.ts                           |  4 +++
+ src/{lib/canBook.test.ts => domain/rules.test.ts} |  2 +-
+ src/{lib/canBook.ts => domain/rules.ts}           | 19 ++++++------
+ src/domain/time.ts                                | 17 +++++++++++
+ src/domain/types.ts                               |  5 ++++
+ 7 files changed, 68 insertions(+), 31 deletions(-)
+b10b0c5 (tag: step1-safety-net) test: add Vitest + Testing Library and characterization tests (30 tests) against the unchanged baseline code
+ docs/evidence/step1_baseline_tests.txt |   17 +
+ package-lock.json                      | 1155 +++++++++++++++++++++++++++++++-
+ package.json                           |   10 +-
+ src/App.test.tsx                       |   85 +++
+ src/lib/canBook.test.ts                |   47 ++
+ src/test/setup.ts                      |    5 +
+ vite.config.ts                         |    7 +-
+ 7 files changed, 1304 insertions(+), 22 deletions(-)
+ecee002 docs: project context, baseline analysis and improvement plan (before editing code)
+ docs/PLAN.md            | 36 ++++++++++++++++++++++++++++++++++++
+ docs/PROJECT_CONTEXT.md | 36 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 72 insertions(+)
+238bdf2 (tag: a3-baseline) baseline: Assignment 3 final prototype (Bolt.new Version 4)
+ .bolt/config.json  |    3 +
+ .bolt/prompt       |    7 +
+ .gitignore         |    4 +
+ eslint.config.js   |   28 +
+ index.html         |   16 +
+ package-lock.json  | 4342 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ package.json       |   35 +
+ postcss.config.js  |    6 +
+ src/App.tsx        |  242 +++
+ src/index.css      |    3 +
+ src/lib/canBook.ts |   56 +
+ src/main.tsx       |   10 +
+ src/vite-env.d.ts  |    1 +
+ tailwind.config.js |    8 +
+ tsconfig.app.json  |   30 +
+ tsconfig.json      |    7 +
+ tsconfig.node.json |   22 +
+ vite.config.ts     |   16 +
+ 18 files changed, 4836 insertions(+)

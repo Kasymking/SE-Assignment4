@@ -1,0 +1,15 @@
+PASS  all 5 rooms listed at start
+PASS  capacity 30 -> A-101 and C-310 (exact capacity matches)
+PASS  capacity 31 -> only A-101 (insufficient capacity excluded)
+PASS  video conference -> A-101 and Studio E-402
+PASS  computers + video conference -> empty state
+PASS  Clear filters restores all rooms
+PASS  B-204: 660-720 AVAILABLE (touching)
+PASS  switch to A-101: same slot refreshes to UNAVAILABLE (overlap 570-690)
+PASS  switch to D-015 (no bookings): AVAILABLE again
+PASS  switch to blocked E-402: "Room is blocked"
+PASS  no horizontal scroll on desktop
+PASS  360px: overlap message visible
+PASS  360px: no horizontal scroll
+
+ALL BROWSER CHECKS PASSED

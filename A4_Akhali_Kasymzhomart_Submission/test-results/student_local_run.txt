@@ -1,0 +1,52 @@
+Saved from the student's own terminal, 7 Nov 2026 (Windows, PowerShell), folder C:\Users\User\Downloads\A4_project
+Commands: npm test; npm run typecheck; npm run lint; npm run build; npm run dev
+(npm install output omitted)
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+ RUN  v3.2.7 C:/Users/User/Downloads/A4_project
+
+ ✓ src/domain/filter.test.ts (18 tests) 11ms
+ ✓ src/data/rooms.test.ts (5 tests) 9ms
+ ✓ src/domain/rules.test.ts (21 tests) 11ms
+ ✓ src/App.integration.test.tsx (10 tests) 1879ms
+   ✓ F5 room switching and "use the chosen room's own bookings" > the same slot gets a different answer in each room, using that room's bookings only  382ms
+ ✓ src/App.test.tsx (9 tests) 2173ms
+   ✓ Assignment 3 behavior in the multi-room UI > a blocked room can never replace an AVAILABLE answer with an available one (Fix 1/F3, adapted from the toggle test)  317ms
+   ✓ Assignment 3 behavior in the multi-room UI > editing an input clears the old result (Fix 1)  337ms
+
+ Test Files  5 passed (5)
+      Tests  63 passed (63)
+   Start at  09:54:30
+   Duration  7.02s (transform 427ms, setup 2.09s, collect 1.55s, tests 4.08s, environment 12.28s, prepare 3.06s)
+
+> vite-react-typescript-starter@0.0.0 typecheck
+> tsc --noEmit -p tsconfig.app.json
+
+> vite-react-typescript-starter@0.0.0 lint
+> eslint .
+
+=============
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+SUPPORTED TYPESCRIPT VERSIONS: >=4.7.4 <5.6.0
+YOUR TYPESCRIPT VERSION: 5.6.3
+=============
+
+> vite-react-typescript-starter@0.0.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+✓ 1582 modules transformed.
+dist/index.html                   0.71 kB │ gzip:  0.39 kB
+dist/assets/index-C5o0XrZj.css   11.61 kB │ gzip:  3.00 kB
+dist/assets/index-Bhg2fzSn.js   156.76 kB │ gzip: 50.56 kB
+✓ built in 3.95s
+
+> vite-react-typescript-starter@0.0.0 dev
+> vite
+
+  VITE v7.3.7  ready in 678 ms
+  ➜  Local:   http://localhost:5173/
+
+Manual walk-through in the browser (student's statement): all scenarios were carried out and matched the expected results.

@@ -1,0 +1,19 @@
+$ npm test   (after step 4b: filter UI, room list, room switching, empty state, per-room blocked)
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/a4/repo
+
+ ✓ src/App.test.tsx (9 tests) 900ms
+ ✓ src/App.integration.test.tsx (10 tests) 875ms
+ ✓ src/domain/filter.test.ts (18 tests) 5ms
+ ✓ src/domain/rules.test.ts (21 tests) 4ms
+ ✓ src/data/rooms.test.ts (5 tests) 4ms
+
+ Test Files  5 passed (5)
+      Tests  63 passed (63)
+   Start at  11:42:23
+   Duration  6.12s (transform 216ms, setup 771ms, collect 380ms, tests 1.79s, environment 1.99s, prepare 469ms)
+

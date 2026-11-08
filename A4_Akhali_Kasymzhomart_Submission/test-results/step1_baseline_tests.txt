@@ -1,0 +1,17 @@
+$ git stash list; git describe --tags (code under test = a3-baseline sources, tests added)
+$ npm test
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/a4/repo
+
+ ✓ src/App.test.tsx (9 tests) 742ms
+ ✓ src/lib/canBook.test.ts (21 tests) 4ms
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  11:37:59
+   Duration  2.78s (transform 164ms, setup 330ms, collect 200ms, tests 746ms, environment 862ms, prepare 296ms)
+

@@ -1,0 +1,4 @@
+$ npx jscpd@4 src --min-lines 4 --min-tokens 30   (baseline tag a3-baseline)
+Duplications detection: Found 0 exact clones with 0(0%) duplicated lines in 5 (4 formats) files.
+$ npx jscpd@4 src --min-lines 4 --min-tokens 30 --ignore "**/*.test.*"   (final)
+Duplications detection: Found 0 exact clones with 0(0%) duplicated lines in 33 (4 formats) files.

@@ -1,0 +1,6 @@
+[DETECTED] M1 capacity uses > instead of >= ->       Tests  3 failed | 60 passed (63)
+[DETECTED] M2 equipment uses some() instead of every() ->       Tests  24 failed | 39 passed (63)
+[DETECTED] M3 overlap test uses <= (touching rejected) ->       Tests  6 failed | 57 passed (63)
+[DETECTED] M4 duration limit off by one (>= 120) ->       Tests  1 failed | 62 passed (63)
+[DETECTED] M5 blocked flag ignored in the check ->       Tests  3 failed | 60 passed (63)
+[DETECTED] M6 check always uses the FIRST room bookings ->       Tests  2 failed | 61 passed (63)

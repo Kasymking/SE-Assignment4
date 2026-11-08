@@ -1,0 +1,16 @@
+$ npm test   (after step 3: components + useAvailabilityForm hook; test files unchanged since step 2)
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/a4/repo
+
+ ✓ src/App.test.tsx (9 tests) 715ms
+ ✓ src/domain/rules.test.ts (21 tests) 4ms
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  11:39:30
+   Duration  2.67s (transform 177ms, setup 322ms, collect 236ms, tests 719ms, environment 780ms, prepare 286ms)
+

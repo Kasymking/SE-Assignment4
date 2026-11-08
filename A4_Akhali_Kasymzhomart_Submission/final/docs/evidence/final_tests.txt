@@ -1,0 +1,19 @@
+$ npm test
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/a4/repo
+
+ ✓ src/App.test.tsx (9 tests) 972ms
+ ✓ src/App.integration.test.tsx (10 tests) 925ms
+ ✓ src/domain/filter.test.ts (18 tests) 6ms
+ ✓ src/domain/rules.test.ts (21 tests) 6ms
+ ✓ src/data/rooms.test.ts (5 tests) 4ms
+
+ Test Files  5 passed (5)
+      Tests  63 passed (63)
+   Start at  23:11:39
+   Duration  6.49s (transform 229ms, setup 832ms, collect 397ms, tests 1.91s, environment 2.07s, prepare 537ms)
+

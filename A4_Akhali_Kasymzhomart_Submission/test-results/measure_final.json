@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "file": "src/App.tsx",
+      "lines": 56
+    },
+    {
+      "file": "src/components/AppHeader.tsx",
+      "lines": 19
+    },
+    {
+      "file": "src/components/AvailabilityForm.tsx",
+      "lines": 48
+    },
+    {
+      "file": "src/components/BlockedBadge.tsx",
+      "lines": 10
+    },
+    {
+      "file": "src/components/BookingList.tsx",
+      "lines": 29
+    },
+    {
+      "file": "src/components/EmptyState.tsx",
+      "lines": 17
+    },
+    {
+      "file": "src/components/EquipmentTags.tsx",
+      "lines": 16
+    },
+    {
+      "file": "src/components/ResultCard.tsx",
+      "lines": 33
+    },
+    {
+      "file": "src/components/RoomFilters.tsx",
+      "lines": 58
+    },
+    {
+      "file": "src/components/RoomList.tsx",
+      "lines": 37
+    },
+    {
+      "file": "src/components/RoomPanel.tsx",
+      "lines": 33
+    },
+    {
+      "file": "src/components/TimeField.tsx",
+      "lines": 36
+    },
+    {
+      "file": "src/data/rooms.ts",
+      "lines": 37
+    },
+    {
+      "file": "src/domain/constants.ts",
+      "lines": 4
+    },
+    {
+      "file": "src/domain/filter.ts",
+      "lines": 18
+    },
+    {
+      "file": "src/domain/rules.ts",
+      "lines": 57
+    },
+    {
+      "file": "src/domain/time.ts",
+      "lines": 17
+    },
+    {
+      "file": "src/domain/types.ts",
+      "lines": 23
+    },
+    {
+      "file": "src/hooks/useAvailabilityForm.ts",
+      "lines": 47
+    },
+    {
+      "file": "src/hooks/useRoomSearch.ts",
+      "lines": 30
+    },
+    {
+      "file": "src/main.tsx",
+      "lines": 10
+    }
+  ],
+  "rules": [
+    {
+      "id": "D1",
+      "name": "day limit 1440 written as a literal",
+      "count": 1,
+      "extraCopies": 0,
+      "at": [
+        "src/domain/constants.ts:3"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "booking limit 120 written as a literal (rule data excluded)",
+      "count": 1,
+      "extraCopies": 0,
+      "at": [
+        "src/domain/constants.ts:4"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "whole-number check for time input, Number.isInteger (lines)",
+      "count": 2,
+      "extraCopies": 1,
+      "at": [
+        "src/domain/rules.ts:22",
+        "src/domain/time.ts:16"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "time-field hint text \"Hint:\" written out",
+      "count": 1,
+      "extraCopies": 0,
+      "at": [
+        "src/components/TimeField.tsx:32"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "places that hide the old result (setResult(null) / reducer \"...state, checked: false\")",
+      "count": 2,
+      "extraCopies": 1,
+      "at": [
+        "src/hooks/useAvailabilityForm.ts:19",
+        "src/hooks/useAvailabilityForm.ts:20"
+      ]
+    },
+    {
+      "id": "D6",
+      "name": "result.ok ok/error branches",
+      "count": 2,
+      "extraCopies": 1,
+      "at": [
+        "src/components/ResultCard.tsx:17",
+        "src/components/ResultCard.tsx:18"
+      ]
+    }
+  ],
+  "totalLines": 635,
+  "largest": {
+    "file": "src/components/RoomFilters.tsx",
+    "lines": 58
+  },
+  "testFiles": 5,
+  "totalExtraCopies": 3
+}
